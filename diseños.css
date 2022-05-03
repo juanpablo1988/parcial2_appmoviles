@@ -1,0 +1,36 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    'encabezado encabezado encabezado'
+    'menu contenido login'
+    'pie pie pie'
+    ;
+    grid-template-rows: 350px 900px 50px;
+    grid-template-columns: 25% 50% 25%;
+
+}
+header{
+    grid-area:encabezado;
+    border-style: solid;
+    background-color: rgb(92, 92, 248);
+}
+.menu{
+    grid-area: menu;
+    border-style: solid;
+    background-color: skyblue;
+}
+.contenido{
+    grid-area: contenido;
+    border-style: solid;
+    background-color: white;
+}
+.login{
+    grid-area: login;
+    border-style: solid;
+    background-color: darksalmon;
+}
+footer{
+    grid-area: pie;
+    border-style: solid;
+    background-color: blue;
+}
